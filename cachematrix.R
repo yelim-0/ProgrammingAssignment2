@@ -1,6 +1,6 @@
 #The assignment requires make two functions. First function is 'makeCacheMatrics.'
 #According to the description of Coursera, 'makeCacheMatrix' is a fuction which can cache its inverse. 
-#So, I made a function used to cache the result, then made the other function for computing the inverse through the solve function. 
+#So, I made a function used to cache a newly inverted matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
     inver <- NULL
@@ -16,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
+#The other function is 'cacheSolve' function. Through this, can find out the solution from cached data or invert the matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
